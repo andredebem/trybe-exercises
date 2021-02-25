@@ -1,16 +1,18 @@
-# Trybe Exercises (PT-BR)
+# Trybe Exercises
 
-Este repositório contém todas as atividades e exercícios desenvolvidos por <a href="https://www.linkedin.com/in/andrebem/" target="_blank"> <em>André de Bem</em> </a> _[André De Bem](https://www.linkedin.com/in/andrebem/)_ enquanto estudava desenvolvimento de software na [Trybe](https://www.betrybe.com/) :rocket:
+## (PT-BR)
+
+Este repositório contém todas as atividades e exercícios desenvolvidos por _[André De Bem](https://www.linkedin.com/in/andrebem/)_ enquanto estudava desenvolvimento de software na [Trybe](https://www.betrybe.com/) :rocket:
 
 O programa conta com mais de 1.500 horas de aulas, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades sociocomportamentais (soft skills).
 
-## Fundamentos doDesenvolvimento Web :white_check_mark:
+## Fundamentos do Desenvolvimento Web :white_check_mark:
 
-##### Bloco 1: IntroduÃ§Ã£o - Unix & Shell
+##### Bloco 1: Introdução - Unix & Shell
 
-- [ ] 1-3: _Unix & Bash - Part 1_
-- [ ] 1-4: _Unix & Bash - Part 2_
-- [ ] 1-5: _Shell Script_
+- [X] 1-3: _Unix & Bash - Part 1_
+- [X] 1-4: _Unix & Bash - Part 2_
+- [X] 1-5: _Shell Script_
 
 ##### Bloco 2: Git & GitHub
 
