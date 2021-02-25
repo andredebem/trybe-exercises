@@ -1,0 +1,15 @@
+.text-align-center {
+  text-align: center;
+}
+
+.line-height {
+  line-height: 24px;
+}
+
+img {
+  max-width: 500px;
+}
+
+.display-block {
+  display: block;
+}
