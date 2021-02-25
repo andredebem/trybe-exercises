@@ -1,24 +1,24 @@
-# Trybe Exercises
+# Trybe Exercises :white_check_mark:
 
 ## (PT-BR)
 
-Este repositório contém todas as atividades e exercícios desenvolvidos por _[André De Bem](https://www.linkedin.com/in/andrebem/)_ enquanto estudava desenvolvimento de software na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositório contém todas as atividades e exercícios desenvolvidos por mim, _[André De Bem](https://www.linkedin.com/in/andrebem/)_, enquanto estudava desenvolvimento de software na [Trybe](https://www.betrybe.com/) :rocket:
 
 O programa conta com mais de 1.500 horas de aulas, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades sociocomportamentais (soft skills).
 
-## Fundamentos do Desenvolvimento Web :white_check_mark:
+## Fundamentos do Desenvolvimento Web :hourglass_flowing_sand:
 
-##### Bloco 1: Introdução - Unix & Shell
+##### Bloco 1: Introdução - Unix, Bash e Shell Script
 
 - [X] 1-3: _Unix & Bash - Part 1_
 - [X] 1-4: _Unix & Bash - Part 2_
 - [X] 1-5: _Shell Script_
 
-##### Bloco 2: Git & GitHub
+##### Bloco 2: Git, GitHub e Internet
 
-- [ ] 2-1: _O que Ã© e para que serve?_
-- [ ] 2-2: _Entendendo os comandos_
-- [ ] 2-3: _Internet - Entendendo como ela funciona_
+- [X] 2-1: _Git & GitHub - O que é e para que serve?_
+- [X] 2-2: _Git & GitHUb - Entendendo os comandos_
+- [X] 2-3: _Internet - Entendendo como ela funciona_
 
 ##### Bloco 3: IntroduÃ§Ã£o - HTML & CSS
 
