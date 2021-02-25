@@ -1,5 +1,5 @@
-let a = 5;
-let b = 7;
+let a = 7;
+let b = 3;
 
 let adicao = a + b;
 let subtracao = a - b;
@@ -12,3 +12,11 @@ console.log(subtracao);
 console.log(multiplicacao);
 console.log(divisao);
 console.log(resto);
+
+if (a > b) {
+  console.log(a)
+} else if (b > a) {
+  console.log(b)
+} else {
+  console.log("São iguais")
+}
