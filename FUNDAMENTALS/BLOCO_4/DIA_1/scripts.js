@@ -132,3 +132,26 @@ if ((num1 % 2 != 0) || (num2 % 2 != 0) || (num3 % 2 != 0)) {
 }
 
 // Pesquisei para fazer essa questão, e descobri como usar o || dentro do switch. Fonte: https://stackoverflow.com/questions/8710442/how-to-specify-multiple-conditions-in-an-if-statement-in-javascript
+
+let valorCusto = 10;
+let valorVenda = 20;
+let imposto = 0.2
+let valorCustoTotal = valorCusto + (valorCusto * imposto)
+let lucro;
+let qtdProdutosVendidos = 1000;
+
+switch(true) {
+  case valorCusto < 0:
+  case valorVenda < 0:
+  case imposto < 0:
+  case qtdProdutosVendidos < 0:
+    console.log("ERRO: VALOR MENOR QUE ZERO")
+    break;
+  case valorCusto >= 0:
+  case valorVenda >= 0:
+  case imposto >= 0:
+  case qtdProdutosVendidos >= 0:  
+    lucro = (valorVenda - valorCustoTotal) * qtdProdutosVendidos 
+    console.log(`LUCRO TOTAL: ${lucro}`)
+    break;
+}
