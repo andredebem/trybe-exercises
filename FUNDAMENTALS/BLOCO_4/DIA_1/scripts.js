@@ -61,3 +61,27 @@ if (angulo1 + angulo2 + angulo3 === 180) {
 else {
   console.log("ERRO")
 }
+
+let pecaXadrez = "peão";
+let pecaXadrezCorrigida = pecaXadrez.toLowerCase();
+
+switch(pecaXadrezCorrigida) {
+  case "rei":
+    console.log("Pode se movimentar para todas as casas a sua volta, mas apenas 1 passo")
+    break;
+  case "rainha":
+    console.log("Todas as direções em sua volta, porém sem pular outras peças")
+    break;
+  case "bispo":
+    console.log("Nas suas diagonais, podendo pular peças do próprio time")
+    break;
+  case "torre":
+    console.log("Apenas em linha reta, mas sem limite de passos")
+    break;
+  case "cavalo":
+    console.log("Em L, podendo pular peças do seu time")
+    break;
+  case "peão":
+    console.log("Apenas para frente, sempre!")
+    break;
+}
