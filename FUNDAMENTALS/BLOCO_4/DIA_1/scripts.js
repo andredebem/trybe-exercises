@@ -155,3 +155,52 @@ switch(true) {
     console.log(`LUCRO TOTAL: ${lucro}`)
     break;
 }
+
+let bruto = 2977;
+let inss;
+let ir;
+
+switch(true) {
+  case bruto < 1000:
+    console.log("SALÁRIO PRECISA SER NO MÍNIMO 1000,00")
+    break;
+  case (bruto >= 1000 && bruto <= 1556.94):
+    inss = 0.08 * bruto
+    break;
+  case (bruto > 1556.94 && bruto <= 2594.92):
+    inss = 0.09 * bruto
+    break;
+  case (bruto > 2594.92 && bruto <= 5189.82):
+    inss = 0.11 * bruto
+    break;
+  case bruto > 5189.82:
+    inss = 570.88
+    break;
+}
+
+let base = bruto - inss
+
+console.log(`INSS: ${inss}`)
+console.log(`BRUTO - INSS: ${base}`)
+
+switch(true) {
+  case (base <= 1903.98):
+    ir = 0;
+    break;
+  case (base > 1903.98 && base <= 2826.65):
+    ir = (0.075 * base) - 142.80 
+    break;
+  case (base > 2826.65 && base <= 3751.05):
+    ir = (0.15 * base) - 354.80
+    break;
+  case (base > 3751.05 && base <= 4664.68):
+    ir = (0.225 * base) - 636.13
+    break;
+  case base > 4664.68:
+    ir = (0.275 * base) - 869.36
+    break;
+}
+
+let liquido = base - ir
+
+console.log(`SALÁRIO LÍQUIDO: ${liquido}`)
