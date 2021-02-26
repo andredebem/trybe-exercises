@@ -114,3 +114,15 @@ switch(true) {
   }
 
 // Pesquisei para fazer essa questão, e descobri que funciona utilizando o termo "true" dentro do switch. Fonte: https://stackoverflow.com/questions/5464362/javascript-using-a-condition-in-switch-case
+
+let num1 = 717;
+let num2 = 202;
+let num3 = 1009;
+
+if ((num1 % 2 == 0) || (num2 % 2 == 0) || (num3 % 2 == 0)) {
+  console.log(true)
+} else {
+  console.log(false)
+}
+
+// Pesquisei para fazer essa questão, e descobri como usar o || dentro do switch. Fonte: https://stackoverflow.com/questions/8710442/how-to-specify-multiple-conditions-in-an-if-statement-in-javascript
