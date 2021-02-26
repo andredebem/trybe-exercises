@@ -85,3 +85,32 @@ switch(pecaXadrezCorrigida) {
     console.log("Apenas para frente, sempre!")
     break;
 }
+
+let notaPorcentagem = 50;
+
+switch(true) {
+  case notaPorcentagem < 0:
+  case notaPorcentagem > 100:
+    console.log("ERRO")
+    break;
+  case notaPorcentagem >= 90:
+    console.log("NOTA: A")
+    break;
+  case notaPorcentagem >= 80:
+    console.log("NOTA B")
+    break;
+  case notaPorcentagem >= 70:
+    console.log("NOTA C")
+    break;
+  case notaPorcentagem >= 60:
+    console.log("NOTA D")
+    break;
+  case notaPorcentagem >= 50:
+    console.log("NOTA E")
+    break;
+  case notaPorcentagem < 50:
+    console.log("NOTA F")
+    break;
+  }
+
+// Pesquisei para fazer essa questão, e descobri que funciona utilizando o termo "true" dentro do switch. Fonte: https://stackoverflow.com/questions/5464362/javascript-using-a-condition-in-switch-case
