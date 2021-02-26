@@ -46,3 +46,18 @@ if (d > 0) {
 } else {
   console.log("zero")
 }
+
+let angulo1 = 30;
+let angulo2 = 60;
+let angulo3 = 90;
+
+if (angulo1 + angulo2 + angulo3 === 180) {
+  console.log(true)
+} else if (angulo1 + angulo2 + angulo3 > 180) {
+  console.log(false)
+} else if (angulo1 + angulo2 + angulo3 < 180) {
+  console.log(false)
+}
+else {
+  console.log("ERRO")
+}
