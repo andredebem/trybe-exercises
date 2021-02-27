@@ -9,4 +9,14 @@ let sum = 0;
 for (index = 0; index < numbers.length; index++) {
   sum = sum + numbers[index]
   }
-  console.log(`SOMA: ${sum}`)
+console.log(`SUM: ${sum}`)
+
+let arithmeticAverage = 0;
+
+for (index = 0; index < numbers.length; index++) {
+    sum = sum + numbers[index]
+    }
+
+arithmeticAverage = sum / numbers.length
+
+console.log(`ARITHMETIC AVERAGE: ${arithmeticAverage}`)
