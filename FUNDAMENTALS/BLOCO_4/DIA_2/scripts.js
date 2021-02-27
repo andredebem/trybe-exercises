@@ -20,3 +20,9 @@ for (index = 0; index < numbers.length; index++) {
 arithmeticAverage = sum / numbers.length
 
 console.log(`ARITHMETIC AVERAGE: ${arithmeticAverage}`)
+
+if (arithmeticAverage > 20) {
+  console.log("GREATER THAN 20")
+} else {
+  console.log("LESS OR EQUAL TO 20")
+}
