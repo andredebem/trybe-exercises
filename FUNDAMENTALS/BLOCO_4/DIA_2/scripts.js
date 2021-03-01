@@ -62,3 +62,15 @@ if (oddNumbers.length != 0) {
 } else {
   console.log("no odd values found")
 }
+
+// Request VII ---------------------------------------------------------
+
+let smallest = numbers[0];
+
+for (index = 1; index < numbers.length; index += 1) {
+  if (numbers[index] < smallest) {
+    smallest = numbers[index]
+  }
+}
+
+console.log(smallest)
