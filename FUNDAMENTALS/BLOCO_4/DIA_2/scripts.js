@@ -75,7 +75,7 @@ for (index = 1; index < numbers.length; index += 1) {
 
 console.log(smallest)
 
-// Request VII ---------------------------------------------------------
+// Request VIII ---------------------------------------------------------
 
 let setOfNumbers = [0];
 
@@ -89,3 +89,17 @@ setOfNumbers.splice(0,1)
 // I learned how to use .splice at this link: https://stackoverflow.com/questions/500606/deleting-array-elements-in-javascript-delete-vs-splice
 
 console.log(setOfNumbers)
+
+// Request IX ---------------------------------------------------------
+
+let dividedNumbers = [0];
+
+for (index = 0; index < setOfNumbers.length; index += 1) {
+  let aux = 0;
+  aux = setOfNumbers[index] / 2
+  dividedNumbers.push(aux)
+}
+
+dividedNumbers.splice(0,1)
+
+console.log(dividedNumbers)
