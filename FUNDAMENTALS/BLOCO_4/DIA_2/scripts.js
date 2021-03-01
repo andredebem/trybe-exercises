@@ -26,3 +26,13 @@ if (arithmeticAverage > 20) {
 } else {
   console.log("LESS OR EQUAL TO 20")
 }
+
+let greather = numbers[0];
+
+for (index = 1; index < numbers.length; index++) {
+  if (numbers[index] > greather) {
+    greather = numbers[index]
+  }
+}
+
+console.log(greather)
