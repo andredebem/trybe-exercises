@@ -74,3 +74,18 @@ for (index = 1; index < numbers.length; index += 1) {
 }
 
 console.log(smallest)
+
+// Request VII ---------------------------------------------------------
+
+let setOfNumbers = [0];
+
+for (index = 0; index < 25; index += 1) {
+  let oneNumber = setOfNumbers[index] + 1
+  setOfNumbers.push(oneNumber)
+}
+
+setOfNumbers.splice(0,1)
+
+// I learned how to use .splice at this link: https://stackoverflow.com/questions/500606/deleting-array-elements-in-javascript-delete-vs-splice
+
+console.log(setOfNumbers)
