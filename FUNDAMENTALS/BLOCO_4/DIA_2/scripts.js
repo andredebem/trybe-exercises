@@ -103,3 +103,49 @@ for (index = 0; index < setOfNumbers.length; index += 1) {
 dividedNumbers.splice(0,1)
 
 console.log(dividedNumbers)
+
+// BONUS ---------------------------------------------------------
+
+let array = [2, 1, 7, 3, 5, 9, 4, 0, 10, 6]
+
+for (let i = 1; i < array.length; i++) {
+  for (let j = 0; j < i; j++) {
+    if (array[i] < array[j]) {
+      let position = array[i];
+
+      array[i] = array[j];
+      array[j] = position;
+    }
+  }
+}
+
+console.log(array)
+
+let arrayDecreasing = [2, 3, 7, 1, 5, 9, 4, 0, 10, 6]
+
+for (let i = 1; i < arrayDecreasing.length; i++) {
+  for (let j = 0; j < i; j++) {
+    if (arrayDecreasing[i] > arrayDecreasing[j]) {
+      let position = arrayDecreasing[i];
+
+      arrayDecreasing[i] = arrayDecreasing[j];
+      arrayDecreasing[j] = position;
+    }
+  }
+}
+
+console.log(arrayDecreasing)
+
+let arrayMul = [2, 1, 7, 3, 5, 9, 4, 10, 6]
+let newArray = []
+
+for (let i = 1; i < arrayMul.length; i++) {
+  for (let j = i - 1; j < i; j++) {
+      let newNumber = arrayMul[j] * arrayMul[i]
+      newArray.push(newNumber)
+    }
+  }
+let lastNumber = arrayMul[arrayMul.length - 1] * 2
+newArray.push(lastNumber)
+
+console.log(newArray)
