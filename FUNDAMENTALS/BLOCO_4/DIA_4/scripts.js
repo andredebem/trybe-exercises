@@ -9,3 +9,9 @@ let info = {
 // Request I ----------------------------------------
 
 console.log(`Bem vinda, ${info.personagem}`)
+
+// Request II ----------------------------------------
+
+info['recorrente'] = "Sim"
+
+console.log(info)
