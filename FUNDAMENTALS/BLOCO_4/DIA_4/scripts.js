@@ -43,3 +43,17 @@ for (let key in info) {
   } else {
     console.log(`${info[key]} e ${info2[key]}`)  }
 }
+
+// FUNCTIONS: Request I ----------------------------------------
+
+function palindromo (word) {
+  let reverseWord = word.split("").reverse().join("");
+  // (PT-BR): Descobri essa maneira de colocar en ordem inversa uma string no site: https://pt.stackoverflow.com/questions/5943/como-inverter-uma-string-em-javascript
+  if (reverseWord === word) {
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(palindromo("arary"))
