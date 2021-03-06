@@ -109,3 +109,27 @@ function mostChar (array) {
 }
 
 console.log(mostChar (['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
+
+// FUNCTIONS: Request V ----------------------------------------
+
+function mostRepeated(array) {
+  let contRepeated = 0;
+  let contNum = 0;
+  let indexNumRepeated = 0;
+  for (let index in array) {
+    let verifNum = array[index];
+    for (let index2 in array) {
+      if (verifNum === array[index2]) {
+        contNum++;
+      }
+    }
+    if (contNum > contRepeated) {
+      contRepeated = contNum;
+      indexNumRepeated = index;
+    }
+    contNum = 0;
+  }
+  return array[indexNumRepeated];
+}
+
+console.log(mostRepeated([2, 3, 3, 5, 8, 2, 3]))
