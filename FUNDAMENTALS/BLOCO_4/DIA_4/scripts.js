@@ -75,3 +75,21 @@ function highestValue (array) {
 }
 
 console.log(highestValue([2, 3, 6, 7, 10, 1]))
+
+// FUNCTIONS: Request III ----------------------------------------
+
+function lowestValue (array) {
+  let lowest = array[0];
+  let positionLowest = 0;
+  for (index = 1; index < array.length; index += 1) {
+    if (array[index] < lowest) {
+      lowest = array[index]
+      positionLowest = index
+    } else {
+
+    }
+  }
+  return positionLowest
+}
+
+console.log(lowestValue([2, 4, 6, 7, 10, 0, -3]))
