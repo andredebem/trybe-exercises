@@ -93,3 +93,19 @@ function lowestValue (array) {
 }
 
 console.log(lowestValue([2, 4, 6, 7, 10, 0, -3]))
+
+// FUNCTIONS: Request IV ----------------------------------------
+
+function mostChar (array) {
+  let name = array[0];
+  for (i = 1; i < array.length; i+= 1) {
+    if (array[i].length > name.length) {
+      name = array[i]
+    } else {
+
+    }
+  }
+  return name
+}
+
+console.log(mostChar (['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']))
