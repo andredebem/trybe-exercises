@@ -133,3 +133,15 @@ function mostRepeated(array) {
 }
 
 console.log(mostRepeated([2, 3, 3, 5, 8, 2, 3]))
+
+// FUNCTIONS: Request VI ----------------------------------------
+
+function sum(num) {
+  let sumResult = 0;
+  for (let i = 1; i <= num; i += 1) {
+    sumResult = sumResult + i;
+  }
+  return sumResult
+}
+
+console.log(sum(5))
