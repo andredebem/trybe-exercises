@@ -73,18 +73,18 @@ console.log(lastLine)
 // Request VI --------------------------------
 
 let num = 73;
-let divisores = [];
+let dividers = [];
 
 for (i = 1; i <= num; i+=1) {
   if (num % i == 0) {
-    divisores.push(i)
+    dividers.push(i)
   } else {
 
   }
 }
 
-if (divisores.length == 2) {
-  console.log("É PRIMO")
+if (dividers.length == 2) {
+  console.log("IT IS A PRIME NUMBER")
 } else (
-  console.log("NÃO É PRIMO")
+  console.log("IT IS NOT A PRIME NUMBER")
 )
