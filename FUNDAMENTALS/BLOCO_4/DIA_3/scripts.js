@@ -69,3 +69,22 @@ for(i = 1; i < middle; i += 1) {
 }
 
 console.log(lastLine)
+
+// Request VI --------------------------------
+
+let num = 73;
+let divisores = [];
+
+for (i = 1; i <= num; i+=1) {
+  if (num % i == 0) {
+    divisores.push(i)
+  } else {
+
+  }
+}
+
+if (divisores.length == 2) {
+  console.log("É PRIMO")
+} else (
+  console.log("NÃO É PRIMO")
+)
