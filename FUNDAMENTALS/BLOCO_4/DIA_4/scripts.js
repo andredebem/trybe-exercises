@@ -56,4 +56,22 @@ function palindromo (word) {
   }
 }
 
-console.log(palindromo("arary"))
+console.log(palindromo("arara"))
+
+// FUNCTIONS: Request II ----------------------------------------
+
+function highestValue (array) {
+  let highest = array[0];
+  let positionHighest = 0;
+  for (index = 1; index < array.length; index += 1) {
+    if (array[index] > highest) {
+      highest = array[index]
+      positionHighest = index
+    } else {
+
+    }
+  }
+  return positionHighest
+}
+
+console.log(highestValue([2, 3, 6, 7, 10, 1]))
