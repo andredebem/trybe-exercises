@@ -145,3 +145,25 @@ function sum(num) {
 }
 
 console.log(sum(5))
+
+// FUNCTIONS: Request VII ----------------------------------------
+
+function wordEnding (word, ending) {
+  let lengthEnding = ending.length;
+  let lengthWord = word.length;
+  let result;
+
+  for(let k = 0; k <= ending.length; k += 1) {
+    lengthEnding = ending.length - k;
+    lengthWord = word.length - k;
+
+    if (word.charAt(lengthWord) == ending.charAt(lengthEnding)) {
+      result = true
+    } else {
+      result = false
+    }
+  }
+  return result
+}
+
+console.log(wordEnding("joaofernando", "ndo"))
