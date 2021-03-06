@@ -41,3 +41,31 @@ for (i = 1; i <= n; i += 2) {
   let final = newLeft + "*".repeat(i) + newRight;
   console.log(final)
 }
+
+// Request V --------------------------------
+//ATTENTION: THE QUESTION HAS NOT BEEN SATISFACTORALLY SOLVED.
+
+let leftSpace = left.slice(0,-1);
+let rightSpace = right.slice(1);
+let firstLine = leftSpace + "*" + rightSpace
+let lastLine = "*".repeat(n);
+
+console.log(firstLine)
+
+for(i = 1; i < middle; i += 1) {
+  let leftInside = leftSpace.slice(0, - i);
+  let rightInside = rightSpace.slice(i);
+  let spaces = "";
+  leftInside = leftInside + "*"
+  for (j = 1; j < middle; j += 2) {
+    if (j <= i) {
+      spaces = " ".repeat(j)
+      leftInside = leftInside + spaces
+    }
+  }
+  rightInside = "*" + rightInside
+  let final = leftInside + rightInside
+  console.log (final)
+}
+
+console.log(lastLine)
