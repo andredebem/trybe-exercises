@@ -167,3 +167,47 @@ function wordEnding (word, ending) {
 }
 
 console.log(wordEnding("joaofernando", "ndo"))
+
+// BONUS: Request I ----------------------------------------
+
+function translateRoman (string) {
+  let result = 0;
+  let numbers = [];
+  let romanNumbers = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+  }
+
+  for (let i = 0; i < string.length; i+= 1) {
+    for (let key in romanNumbers) {
+      if (string.charAt(i) == key) {
+        numbers.push(romanNumbers[key])
+      } else {}
+    }
+  }
+
+  const indexNumbers = numbers.length;
+
+  for (j = 1; j <= indexNumbers; j += 1) {
+    for (k = (j - 1); k < j; k += 1) {
+      if (numbers.length == 1) {
+        result = result + numbers[0]
+        numbers = []
+      } if (numbers[0] < numbers[1]) {
+        result = result + (numbers[1] - numbers[0])
+        numbers.splice(0,2) 
+      } if (numbers[0] >= numbers[1]) {
+        result = result + numbers[0]
+        numbers.splice(0,1)
+      } if (numbers.length == 0) {}
+    }
+  }
+  console.log(result)
+}
+
+translateRoman("MCMDCDCXCLXLXIXVIVI")
