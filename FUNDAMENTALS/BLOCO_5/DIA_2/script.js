@@ -68,3 +68,20 @@ function addImg() {
 }
 
 addImg()
+
+// Request VIII
+
+function addList() {
+  let numbers = ["um", "dois", "três", "quatro", "cinco", "seis", "sete", "oito", "nove", "dez"]
+  let list = document.createElement("UL");
+  list.classList.add("list");
+  document.getElementsByClassName("right-content")[0].appendChild(list)
+  for (i = 0; i < numbers.length; i += 1) {
+    let num = numbers[i];
+    let item = document.createElement("li");
+    item.innerText = num;
+    document.getElementsByClassName("list")[0].appendChild(item)
+  }
+}
+
+addList()
