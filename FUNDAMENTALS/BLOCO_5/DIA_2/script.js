@@ -111,3 +111,10 @@ function addDescription() {
 }
 
 addDescription()
+
+// Part II - Request III
+
+let dad = document.getElementsByClassName("main-content")[0];
+let son = document.getElementsByClassName("left-content")[0];
+
+dad.removeChild(son)
