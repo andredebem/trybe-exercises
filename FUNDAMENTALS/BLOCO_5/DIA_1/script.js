@@ -26,3 +26,12 @@ function upperCaseP () {
 }
 
 upperCaseP()
+
+function consoleTagP () {
+  for (let index = 0; index < document.getElementsByTagName("p").length; index += 1) {
+    let text = document.getElementsByTagName("p")[index].innerText
+    console.log(text)
+  }
+}
+
+consoleTagP()
