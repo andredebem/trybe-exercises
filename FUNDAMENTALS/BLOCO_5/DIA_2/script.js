@@ -101,3 +101,13 @@ three()
 // Part II - Request I
 
 document.getElementsByTagName("h1")[0].classList.add("title")
+
+// Part II - Request II
+
+function addDescription() {
+  for (let i = 0; i < document.getElementsByTagName("h3").length; i += 1) {
+    document.getElementsByTagName("h3")[i].classList.add("description")
+  }
+}
+
+addDescription()
