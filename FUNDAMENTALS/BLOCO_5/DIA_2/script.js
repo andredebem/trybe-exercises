@@ -17,3 +17,13 @@ function addMainContent() {
 }
 
 addMainContent()
+
+//Request III
+
+function addCenterContent() {
+  let centerContent = document.createElement("div");
+  centerContent.classList.add("center-content");
+  document.getElementsByClassName("main-content")[0].appendChild(centerContent)
+}
+
+addCenterContent()
