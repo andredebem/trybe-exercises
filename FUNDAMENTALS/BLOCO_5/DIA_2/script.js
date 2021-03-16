@@ -47,3 +47,13 @@ function addLeftContent() {
 }
 
 addLeftContent()
+
+//Request VI
+
+function addRightContent() {
+  let rightContent = document.createElement("div");
+  rightContent.classList.add("right-content");
+  document.getElementsByClassName("main-content")[0].appendChild(rightContent)
+}
+
+addRightContent()
