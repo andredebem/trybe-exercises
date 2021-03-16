@@ -12,4 +12,4 @@
         */
 
 document.getElementsByTagName("p")[1].innerText = "Em portugal, trabalhando e honrando a Nosso Senhor"
-document.getElementsByClassName("main-content")[0].style.backgroundColor = "blue"
+document.getElementsByClassName("main-content")[0].style.backgroundColor = "rgb(76, 164, 109)"
