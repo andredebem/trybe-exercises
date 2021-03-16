@@ -85,3 +85,15 @@ function addList() {
 }
 
 addList()
+
+// Request IX
+
+function three() {
+  for (let i = 1; i <= 3; i += 1) {
+    let titles = document.createElement("h3");
+    titles.innerText = "Exemplo"
+    document.getElementsByClassName("main-content")[0].appendChild(titles)
+  }
+}
+
+three()
