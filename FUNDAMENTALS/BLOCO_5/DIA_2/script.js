@@ -97,3 +97,7 @@ function three() {
 }
 
 three()
+
+// Part II - Request I
+
+document.getElementsByTagName("h1")[0].classList.add("title")
