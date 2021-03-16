@@ -27,3 +27,13 @@ function addCenterContent() {
 }
 
 addCenterContent()
+
+//Request IV
+
+function addParagraph() {
+  let para = document.createElement("p");
+  para.innerText = "Text Example";
+  document.getElementsByClassName("center-content")[0].appendChild(para)
+}
+
+addParagraph()
