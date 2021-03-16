@@ -57,3 +57,14 @@ function addRightContent() {
 }
 
 addRightContent()
+
+// Request VII
+
+function addImg() {
+  let newImg = document.createElement("img");
+  newImg.classList.add("small-image");
+  newImg.src = "https://picsum.photos/200";
+  document.getElementsByClassName("left-content")[0].appendChild(newImg);
+}
+
+addImg()
