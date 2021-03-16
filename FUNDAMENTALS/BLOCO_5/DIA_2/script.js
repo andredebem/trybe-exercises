@@ -122,3 +122,7 @@ dad.removeChild(son)
 // Part II - Request IV
 
 document.getElementsByClassName("right-content")[0].style.marginRight = "auto"
+
+// Part II - Request V
+
+document.querySelector(".center-content").style.backgroundColor = "green"
