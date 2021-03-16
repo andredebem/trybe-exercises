@@ -126,3 +126,9 @@ document.getElementsByClassName("right-content")[0].style.marginRight = "auto"
 // Part II - Request V
 
 document.querySelector(".center-content").style.backgroundColor = "green"
+
+// Part II - Request VI
+
+for (let i = 0; i < 2; i += 1) {
+  document.querySelector(".list").lastElementChild.remove()
+}
