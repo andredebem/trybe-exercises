@@ -7,3 +7,13 @@ function addTitle() {
 }
 
 addTitle()
+
+//Request II
+
+function addMainContent() {
+  let mainContent = document.createElement("div");
+  mainContent.classList.add("main-content")
+  document.getElementsByTagName("body")[0].appendChild(mainContent)
+}
+
+addMainContent()
