@@ -118,3 +118,7 @@ let dad = document.getElementsByClassName("main-content")[0];
 let son = document.getElementsByClassName("left-content")[0];
 
 dad.removeChild(son)
+
+// Part II - Request IV
+
+document.getElementsByClassName("right-content")[0].style.marginRight = "auto"
