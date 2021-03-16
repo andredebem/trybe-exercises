@@ -37,3 +37,13 @@ function addParagraph() {
 }
 
 addParagraph()
+
+//Request V
+
+function addLeftContent() {
+  let leftContent = document.createElement("div");
+  leftContent.classList.add("left-content");
+  document.getElementsByClassName("main-content")[0].appendChild(leftContent)
+}
+
+addLeftContent()
