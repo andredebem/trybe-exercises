@@ -88,3 +88,18 @@ function addBtnFriday(string) {
 }
 
 addBtnFriday("Sexta-Feira")
+
+// Exercise V
+
+document.querySelector("#btn-friday").addEventListener("click", function (event) {
+  if(event.target.id === "btn-friday") {
+    for (let i = 0; i < document.querySelectorAll(".day").length; i += 1) {
+      if (document.querySelectorAll(".day")[i].innerText == "SEXTOU!") {
+        document.querySelectorAll(".day")[i].innerText = dezDaysList[i].toString();
+      }
+      else if (document.querySelectorAll(".day")[i].classList.contains("friday") == true) {
+        document.querySelectorAll(".day")[i].innerText = "SEXTOU!"
+      }
+    }
+  }
+})
