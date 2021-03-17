@@ -127,3 +127,14 @@ function addTask(string) {
 }
 
 addTask("Comer maçã")
+
+// Exercise VIII
+
+function subColor(string) {
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("task");
+  newDiv.style.backgroundColor = string;
+  document.querySelector(".my-tasks").appendChild(newDiv);
+}
+
+subColor("lightgreen")
