@@ -54,8 +54,8 @@ addDays()
 
 function addBtnHolidays(string) {
   let newButton = document.createElement("button");
-  newButton.innerText = "Feriados";
-  newButton.name = "Feriados";
+  newButton.innerText =string;
+  newButton.name = string;
   newButton.id = "btn-holiday";
   document.querySelector(".buttons-container").appendChild(newButton)
 }
@@ -76,3 +76,15 @@ document.querySelector("#btn-holiday").addEventListener("click", function (event
     }
   }
 })
+
+// Exercise IV
+
+function addBtnFriday(string) {
+  let newButton = document.createElement("button");
+  newButton.innerText =string;
+  newButton.name = string;
+  newButton.id = "btn-friday";
+  document.querySelector(".buttons-container").appendChild(newButton)
+}
+
+addBtnFriday("Sexta-Feira")
