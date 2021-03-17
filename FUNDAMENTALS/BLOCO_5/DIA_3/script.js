@@ -103,3 +103,17 @@ document.querySelector("#btn-friday").addEventListener("click", function (event)
     }
   }
 })
+
+// Exercise VI
+
+document.querySelector(".days-container").addEventListener("mouseover", function (event){
+  if(event.target.classList.contains("day") == true) {
+    event.target.style.fontSize = "60px";
+  }
+})
+
+document.querySelector(".days-container").addEventListener("mouseout", function (event){
+  if(event.target.classList.contains("day") == true) {
+    event.target.style.fontSize = "20px";
+  }
+})
