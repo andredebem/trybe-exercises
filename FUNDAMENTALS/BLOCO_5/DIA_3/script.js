@@ -159,3 +159,29 @@ document.querySelector(".days-container").addEventListener("click", function (ev
     event.target.style.color = "rgb(119,119,119)"
   }
 })
+
+// BONUS
+
+document.querySelector(".input-container").addEventListener("click", function(event) {
+  if(event.target.id == "btn-add" && document.querySelector("#task-input").value.length > 0) {
+    let newComp = document.createElement("div");
+    newComp.innerText = document.querySelector("#task-input").value;
+    document.querySelector(".input-container").insertBefore(newComp, document.querySelector(".input-container").children[1]);
+    document.querySelector("#task-input").value = "";
+  }
+  else if (event.target.id == "btn-add" && document.querySelector("#task-input").value.length == 0) {
+    alert("Adicione um compromisso!")
+  }
+})
+
+document.querySelector("#task-input").addEventListener("keyup", function(event) {
+  if (event.keyCode === 13 && document.querySelector("#task-input").value.length > 0) {
+    let newComp = document.createElement("div");
+    newComp.innerText = document.querySelector("#task-input").value;
+    document.querySelector(".input-container").insertBefore(newComp, document.querySelector(".input-container").children[1]);
+    document.querySelector("#task-input").value = "";
+  }
+  else if (event.keyCode === 13 && document.querySelector("#task-input").value.length == 0) {
+    alert("Adicione um compromisso!")
+  }
+})
