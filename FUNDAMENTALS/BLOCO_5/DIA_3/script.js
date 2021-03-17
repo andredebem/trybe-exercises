@@ -148,3 +148,14 @@ document.querySelector(".my-tasks").addEventListener("click", function (event) {
     event.target.classList.remove("selected")
   }
 })
+
+// Exercise X
+
+document.querySelector(".days-container").addEventListener("click", function (event){
+  if(event.target.classList.contains("day") == true && document.querySelectorAll(".selected").length > 0 && event.target.style.color != document.querySelector(".selected").style.backgroundColor) {
+    event.target.style.color = document.querySelector(".selected").style.backgroundColor
+  }
+  else if (event.target.classList.contains("day") == true && event.target.style.color == document.querySelector(".task").style.backgroundColor) {
+    event.target.style.color = "rgb(119,119,119)"
+  }
+})
