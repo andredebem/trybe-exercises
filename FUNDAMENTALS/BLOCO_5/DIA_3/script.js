@@ -61,3 +61,18 @@ function addBtnHolidays(string) {
 }
 
 addBtnHolidays("Feriados")
+
+// Exercise III
+
+document.querySelector("#btn-holiday").addEventListener("click", function (event) {
+  if(event.target.id === "btn-holiday") {
+    for (let i = 0; i < document.querySelectorAll(".day").length; i += 1) {
+      if (document.querySelectorAll(".day")[i].style.backgroundColor == "red") {
+        document.querySelectorAll(".day")[i].style.backgroundColor = ""
+      }
+      else if (document.querySelectorAll(".day")[i].classList.contains("holiday") == true) {
+        document.querySelectorAll(".day")[i].style.backgroundColor = "red"
+      }
+    }
+  }
+})
