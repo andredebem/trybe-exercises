@@ -49,3 +49,15 @@ function addDays () {
 }
 
 addDays()
+
+// Exercise II
+
+function addBtnHolidays(string) {
+  let newButton = document.createElement("button");
+  newButton.innerText = "Feriados";
+  newButton.name = "Feriados";
+  newButton.id = "btn-holiday";
+  document.querySelector(".buttons-container").appendChild(newButton)
+}
+
+addBtnHolidays("Feriados")
