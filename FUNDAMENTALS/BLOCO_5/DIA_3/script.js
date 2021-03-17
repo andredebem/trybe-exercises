@@ -117,3 +117,13 @@ document.querySelector(".days-container").addEventListener("mouseout", function 
     event.target.style.fontSize = "20px";
   }
 })
+
+// Exercise VII
+
+function addTask(string) {
+  let newTask = document.createElement("span");
+  newTask.innerText = string;
+  document.querySelector(".my-tasks").appendChild(newTask);
+}
+
+addTask("Comer maçã")
