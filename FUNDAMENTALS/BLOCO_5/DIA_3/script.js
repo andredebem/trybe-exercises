@@ -138,3 +138,13 @@ function subColor(string) {
 }
 
 subColor("lightgreen")
+
+// Exercise IX
+
+document.querySelector(".my-tasks").addEventListener("click", function (event) {
+  if (event.target.className == "task" && event.target.className != "task selected") {
+    event.target.classList.add("selected");
+  } else if (event.target.className == "task selected") {
+    event.target.classList.remove("selected")
+  }
+})
