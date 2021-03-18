@@ -40,3 +40,28 @@ function colorTextStart() {
     document.querySelector(".text").style.color = oldcolor;
   } else if (localStorage.getItem("colortext") == null) {}
 }
+
+// ------------------------------------
+
+function sizeFont() {
+  let size = Math.floor(Math.random() * 28) + 1;
+  return size.toString()
+}
+
+document.getElementById("size-font-btn").addEventListener("click", function(event) {
+  if (event.target.id == "size-font-btn") {
+    let newSize = `${sizeFont()}px`;
+    document.querySelector(".text").style.fontSize = newSize;
+    let fontSize = document.querySelector(".text").style.fontSize;
+    localStorage.setItem("fontsize", fontSize)
+  }
+})
+
+window.onload = sizeFontStart()
+
+function sizeFontStart() {
+  if (localStorage.getItem("fontsize") != null) {
+    let oldsize = localStorage.getItem("fontsize");
+    document.querySelector(".text").style.fontSize = oldsize;
+  } else if (localStorage.getItem("fontsize") == null) {}
+}
