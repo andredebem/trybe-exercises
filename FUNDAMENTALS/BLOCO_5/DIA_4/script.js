@@ -90,3 +90,39 @@ function lineHeightStart() {
     document.querySelector(".text").style.lineHeight = oldHeight;
   } else if (localStorage.getItem("lineheight") == null) {}
 }
+
+// -----------------------------------
+
+document.getElementById("font-family").addEventListener("click", function(event){
+  if (event.target.value == "monospace") {
+    document.querySelector(".text").style.fontFamily = event.target.value;
+    let fontFml = event.target.value;
+    localStorage.setItem("fontfamily", fontFml)
+  }
+  else if (event.target.value == "cursive") {
+    document.querySelector(".text").style.fontFamily = event.target.value;
+    let fontFml = event.target.value;
+    localStorage.setItem("fontfamily", fontFml)
+  }
+  else if (event.target.value == "fantasy") {
+    document.querySelector(".text").style.fontFamily = event.target.value;
+    let fontFml = event.target.value;
+    localStorage.setItem("fontfamily", fontFml)
+  }
+  else if (event.target.value == "") {
+    document.querySelector(".text").style.fontFamily = event.target.value;
+    let fontFml = event.target.value;
+    localStorage.setItem("fontfamily", fontFml)
+  }
+})
+
+window.onload = fontFamilyStart()
+
+function fontFamilyStart() {
+  if (localStorage.getItem("fontfamily") != null) {
+    let oldFont = localStorage.getItem("fontfamily");
+    document.querySelector(".text").style.fontFamily = oldFont;
+    
+  }
+  else if (localStorage.getItem("fontfamily") == null) {}
+}
