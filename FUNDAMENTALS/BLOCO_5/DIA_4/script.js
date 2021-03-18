@@ -65,3 +65,28 @@ function sizeFontStart() {
     document.querySelector(".text").style.fontSize = oldsize;
   } else if (localStorage.getItem("fontsize") == null) {}
 }
+
+// -----------------------------------
+
+function lineHeight() {
+  let height = Math.floor(Math.random() * (32 - 18 + 1) ) + 18;
+  return height.toString()
+}
+
+document.getElementById("line-height-btn").addEventListener("click", function(event) {
+  if (event.target.id == "line-height-btn") {
+    let newHeight = `${lineHeight()}px`;
+    document.querySelector(".text").style.lineHeight = newHeight;
+    let heightLine = document.querySelector(".text").style.lineHeight;
+    localStorage.setItem("lineheight", heightLine)
+  }
+})
+
+window.onload = lineHeightStart()
+
+function lineHeightStart() {
+  if (localStorage.getItem("lineheight") != null) {
+    let oldHeight = localStorage.getItem("lineheight");
+    document.querySelector(".text").style.lineHeight = oldHeight;
+  } else if (localStorage.getItem("lineheight") == null) {}
+}
