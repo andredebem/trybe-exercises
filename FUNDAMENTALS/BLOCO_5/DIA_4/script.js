@@ -23,3 +23,20 @@ function bgColorStart() {
 
 // -----------------------------------
 
+document.getElementById("color-text-btn").addEventListener("click", function(event) {
+  if (event.target.id == "color-text-btn") {
+    let rgbNum = `(${randomRgb()}, ${randomRgb()}, ${randomRgb()})`;
+    document.querySelector(".text").style.color = "rgb" + rgbNum;
+    let colorText = document.querySelector(".text").style.color;
+    localStorage.setItem("colortext", colorText)
+  }
+})
+
+window.onload = colorTextStart()
+
+function colorTextStart() {
+  if (localStorage.getItem("colortext") != null) {
+    let oldcolor = localStorage.getItem("colortext");
+    document.querySelector(".text").style.color = oldcolor;
+  } else if (localStorage.getItem("colortext") == null) {}
+}
