@@ -40,13 +40,3 @@ function estadosBrasil() {
 }
 
 //------------------------------------
-
-var date = document.getElementById("input-date");
-
-date.addEventListener("input", function(event) {
-  if (event.target.validity.typeMismatch) {
-    date.setCustomValidity("DD/MM/AAAA")
-  } else {
-    date.setCustomValidity("");
-  }
-})
