@@ -24,13 +24,35 @@
       <label for="input-endereco">Endereço:</label>
       <input id="input-endereco" name="endereco" required maxlength="200" type="text" placeholder="Digite aqui seu endereço...">
       <br>
-      <label for="input-tipo">Tipo:</label>
-      <input id="input-tipo" name="tipo" required type="radio" value="casa">Casa
-      <input id="input-tipo" name="tipo" required type="radio" value="apartamento">Apartamento
+      <label for="div-tipo">Escolha:</label>
+      <div id="div-tipo">
+        <label for="input-tipo1">Casa:</label>
+        <input id="input-tipo1" name="tipo" required type="radio" value="casa">
+        <label for="input-tipo2">Apartamento:</label>
+        <input id="input-tipo2" name="tipo" required type="radio" value="apartamento">
+      </div>
       <br>
       <label for="input-estado">Estado:</label>
       <select id="input-estado" name="estado" required>
       </select>
+    </fieldset>
+    <fieldset>
+      <div class="text-divs">
+        <label for="resumo">Resumo do Currículo:</label>
+        <textarea id="resumo" name="resumo" required maxlength="1000" cols="45" rows="12" placeholder="Digite aqui seu resumo..."></textarea>
+      </div>
+      <br>
+      <label for="input-cargo">Cargo:</label>
+      <input id="input-cargo" name="cargo" required maxlength="40" type="text" placeholder="Digite aqui seu cargo...">
+      <br>
+      <div class="text-divs">
+        <label for="descricao">Descrição do cargo:</label>
+        <textarea id="descricao" name="descricao" required maxlength="500" cols="25" rows="6" placeholder="Digite aqui a descrição..."></textarea>
+      </div>
+      <br>
+      <label for="input-date">Data de início:</label>
+      <input id="input-date" name="data-inicio" required pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}" type="text" oninvalid="setCustomValidity(`Data inválida (DD/MM/AAAA)`)" placeholder="No formato: dd/mm/aaaa">
+      <!-- Utilizei como fonte o site: https://www.html5pattern.com/Dates que por meio do código conseguir entender como o pattern funciona -->
     </fieldset>
 
   </form>
