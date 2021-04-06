@@ -27,6 +27,7 @@ body {
   order: 1;
   flex-grow: 1;
   /* Como foram definidos os tamanhos dos dois containers através do flex-basis (500+268 = 768px), basta que adicionemos a propriedade flex-grow para definir o que irá acontecer ao ultrapassar esse valor.*/
+  align-self: center;
 }
 
 .menu-container ul {
