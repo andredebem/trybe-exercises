@@ -25,6 +25,8 @@ body {
   display: flex;
   flex-basis: 500px;
   order: 1;
+  flex-grow: 1;
+  /* Como foram definidos os tamanhos dos dois containers através do flex-basis (500+268 = 768px), basta que adicionemos a propriedade flex-grow para definir o que irá acontecer ao ultrapassar esse valor.*/
 }
 
 .menu-container ul {
@@ -39,8 +41,4 @@ body {
   font-size: 1.3rem;
   list-style: none;
   margin-right: 10px;
-}
-
-header {
-
 }
