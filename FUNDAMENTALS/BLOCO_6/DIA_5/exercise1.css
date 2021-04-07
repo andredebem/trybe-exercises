@@ -1,0 +1,45 @@
+body {
+
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 165%;
+    margin: 25px;
+  }
+  h1 {
+    font-size: 130%;
+  }
+  figure {
+    margin: 75px 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    text-align: center;
+    font-size: 140%;
+  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  figure {
+    margin: 25px 10px;
+  }
+}

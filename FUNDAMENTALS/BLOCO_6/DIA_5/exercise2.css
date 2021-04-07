@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 200%;
+  }
+  header {
+    display: flex;
+    background-color: wheat;
+    border-radius: 0px 0px 50px 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+  header h1 {
+    display: flex;
+    text-align: center;
+  }
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  header nav li {
+    margin-right: 50px;
+  }
+  .first {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .aside-one {
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+  }
+  .aside-two {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 300px;
+    order: 0;
+  }
+}
