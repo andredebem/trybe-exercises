@@ -15,3 +15,16 @@ const testingScope = (escopo) => {
 // }
 
 testingScope(true);
+
+// Request II -------------------------
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+const crescentOrder = (array) => {
+  array.sort(function(a, b) {return a - b})
+  console.log(`Os números ${array} se encontram ordenados de forma crescente!`)
+}
+
+// Seu código aqui.
+
+crescentOrder(oddsAndEvens);
