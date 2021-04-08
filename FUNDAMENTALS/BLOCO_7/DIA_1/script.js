@@ -40,3 +40,16 @@ const fatorial = (n) => {
 // Fonte de pesquisa que me ajudou muito: https://serprogramador.com.br/artigos/topico/javascript/Como-calcular-a-operacao-matematica-de-fatorial-com-JavaScript
 
 console.log(fatorial(4));
+
+// Part II ----------------- Request II
+
+const longWord = (phrase) => {
+  let sprSplit = phrase.split(' ').reduce(function(longest, current) {
+    return current.length > longest.length ? current : longest;
+  }, '');
+    return sprSplit;
+}
+
+console.log(longWord('Muito interessante seu ponto, Aristófanes'));
+
+// Fonte de pesquisa que me ajudou muito: https://www.freecodecamp.org/news/three-ways-to-find-the-longest-word-in-a-string-in-javascript-a2fb04c9757c/
