@@ -28,3 +28,15 @@ const crescentOrder = (array) => {
 // Seu código aqui.
 
 crescentOrder(oddsAndEvens);
+
+// Part II ----------------- Request I
+
+const fatorial = (n) => {
+  let result;
+  n == 0 || n == 1 ? result = 1 : result = (n * fatorial(n - 1));
+  return result;
+}
+
+// Fonte de pesquisa que me ajudou muito: https://serprogramador.com.br/artigos/topico/javascript/Como-calcular-a-operacao-matematica-de-fatorial-com-JavaScript
+
+console.log(fatorial(4));
