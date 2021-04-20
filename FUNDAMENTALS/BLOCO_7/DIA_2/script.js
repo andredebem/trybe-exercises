@@ -45,9 +45,13 @@ const customerInfo = (fullOrder) => {
 
 customerInfo(order);
 
-const orderModifier = (order) => {
+const orderModifier = (fullOrder) => {
   // Adicione abaixo as informações necessárias.
-
+  fullOrder['name'] = 'Luiz Silva';
+  const { name } = fullOrder;
+  const { payment } = fullOrder;
+  payment['total'] = 50;
+  return `Olá ${name}, o total do seu pedido de muzzarella, calabresa e Coca-Cola Zero é R$ ${payment['total']},00.`
 }
 
 orderModifier(order);
