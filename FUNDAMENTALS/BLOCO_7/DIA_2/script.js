@@ -90,3 +90,9 @@ const keyObj = (object) => {
 }
 
 keyObj(lesson3);
+
+const valuesObj = (object) => {
+  console.log(Object.values(object));
+}
+
+valuesObj(lesson1);
