@@ -96,3 +96,17 @@ const valuesObj = (object) => {
 }
 
 valuesObj(lesson1);
+
+const allLessons = {};
+
+const agroupAllLessons = (les1, les2, les3) => {
+  const lessons = {
+    lesson1: les1,
+    lesson2: les2,
+    lesson3: les3
+  };
+  Object.assign(allLessons, lessons);
+  console.log(allLessons);
+}
+
+agroupAllLessons(lesson1, lesson2, lesson3);
