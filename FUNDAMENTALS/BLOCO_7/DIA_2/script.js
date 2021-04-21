@@ -84,3 +84,9 @@ const addTurnoManha = (les2, key, value) => {
 }
 
 addTurnoManha(lesson2, 'turno', 'manhã');
+
+const keyObj = (object) => {
+  console.log(Object.keys(object));
+}
+
+keyObj(lesson3);
