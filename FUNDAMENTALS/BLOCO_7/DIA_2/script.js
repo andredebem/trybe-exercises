@@ -121,3 +121,9 @@ const numberOfStudents = (allLessonsObj) => {
 }
 
 numberOfStudents(allLessons);
+
+const valueByPosition = (lesson, position) => {
+  console.log(Object.values(lesson)[position]);
+}
+
+valueByPosition(lesson1, 0);
