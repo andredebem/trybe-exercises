@@ -127,3 +127,12 @@ const valueByPosition = (lesson, position) => {
 }
 
 valueByPosition(lesson1, 0);
+
+const verifyPair = (lesson, key, value) => {
+  const entriesLesson = Object.entries(lesson);
+  const result = entriesLesson.some((pair) => pair[0] === key && pair[1] === value);
+  console.log(result);
+}
+
+verifyPair(lesson3, 'materia', 'Maria Clara');
+verifyPair(lesson2, 'numeroEstudantes', 20);
