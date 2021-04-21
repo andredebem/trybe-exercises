@@ -106,7 +106,18 @@ const agroupAllLessons = (les1, les2, les3) => {
     lesson3: les3
   };
   Object.assign(allLessons, lessons);
-  console.log(allLessons);
 }
 
 agroupAllLessons(lesson1, lesson2, lesson3);
+console.log(allLessons);
+
+const numberOfStudents = (allLessonsObj) => {
+  let numberFinal = 0;
+  Object.values(allLessonsObj).forEach((lesson) => {
+    const { numeroEstudantes } = lesson;
+    numberFinal += numeroEstudantes;
+  })
+  console.log(numberFinal);
+}
+
+numberOfStudents(allLessons);
